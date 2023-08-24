@@ -1,0 +1,85 @@
+// TOPNAVIGATION COMPONENT
+@media screen and (max-width: 66.625rem) {
+  .browse-container {
+    &__subnav {
+      flex-wrap: wrap;
+
+      &__header {
+        margin-bottom: 0.8rem;
+      }
+    }
+  }
+}
+// BROWSE COMPONENT
+@media screen and (max-width: 57.375rem) {
+  .browse-container {
+    &__subnav {
+      form {
+        flex-wrap: wrap;
+
+        .form {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .browse-container__category-container {
+    &__header {
+      margin-bottom: 0.8rem;
+    }
+    &-cat {
+      gap: 0.9rem !important;
+      margin-top: 0.9rem;
+
+      &-one {
+        margin: 0.7rem 0;
+        width: 100%;
+        justify-content: space-between;
+      }
+    }
+  }
+}
+// PADDING FOR BROWSE COMPONENT
+@media screen and (max-width: 43.75rem) {
+  .browse-container,
+  .category-container {
+    padding: 1.5rem;
+  }
+
+  .category-container {
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 32.438rem) {
+  .browse-container {
+    &__subnav {
+      .form {
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+
+        width: 100%;
+
+        input {
+          width: 100% !important;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 37.625rem) {
+  .category-container {
+    align-items: center;
+    justify-content: center;
+
+    // &__cat {
+    //   width: 100%;
+    //   text-align: center;
+    // }
+  }
+}
+
+@media screen and (max-width: 41.25rem) {
+ 
+}

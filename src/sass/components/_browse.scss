@@ -1,0 +1,121 @@
+.browse-container {
+  padding: 5rem 3rem 0;
+
+  &__subnav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+    form {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    .form {
+      position: relative;
+
+      input {
+        outline: none;
+        padding: 1rem;
+        width: 27rem;
+      }
+      i {
+        padding-left: 1.3rem;
+      }
+    }
+
+    &__header {
+      font-size: 2.3rem;
+      font-weight: 600;
+    }
+    &__location {
+      background-color: #eeeeee;
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+
+      i {
+        font-size: 1.1rem;
+        color: $GRAY-COLOR;
+      }
+    }
+  }
+  &__category-container {
+    margin: 3rem 0 0 0;
+    
+
+    &-header {
+      font-size: 1.4rem;
+      font-weight: 500;
+    }
+
+    &-cat {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1.8rem;
+
+      &-one {
+        margin: 2rem 0;
+        padding: 1.2rem 1rem;
+        background-color: #eeeeee;
+        border: 1px solid #eeeeee;
+        transition: all 700ms ease-in-out;
+
+        display: flex;
+        align-items: center;
+        gap: 0.7rem;
+
+        h1 {
+          font-weight: 500;
+        }
+
+        i {
+          font-size: 1.3rem;
+          color: $GRAY-COLOR;
+        }
+
+        &:hover {
+          border: 1px solid $GRAY-COLOR;
+          cursor: pointer;
+          background-color: darken(#e4e4e4, 5);
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}
+
+.active-option {
+  background-color: $WHITE-COLOR;
+  border-radius: 50px;
+  color: $PRIMARY-COLOR;
+}
+.actived {
+  transform: scale(1.1);
+  background-color: #eeeeee !important;
+  border: 1px solid $GRAY-COLOR;
+
+  h1 {
+    font-size: 1.1rem;
+    transform: rotate(-3deg);
+  }
+  i {
+    font-size: 1.1rem;
+    transform: rotate(3deg);
+  }
+}
+
+.search-box {
+  position: absolute;
+  bottom: 20;
+  left: 0;
+  background-color: $WHITE-COLOR;
+  width: 100%;
+  transition: all 700ms ease-in-out;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}

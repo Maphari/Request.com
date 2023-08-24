@@ -1,0 +1,120 @@
+.color {
+  color: $SECONDARY-COLOR;
+}
+.navigation-container {
+  background-image: $BACKGROUND-IMAGE-PRIMARY;
+  color: $WHITE-COLOR;
+  padding: 2rem 6rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .div {
+    width: 100%;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+
+    .header-img {
+      $SIZE: 35px;
+      width: $SIZE;
+      height: $SIZE;
+    }
+    &-title {
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+  }
+  &__links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    .navigation-container__link {
+      font-weight: 200;
+
+      .main {
+        padding: 0.7rem !important;
+        font-weight: 400;
+        border: 1px solid $GRAY-COLOR;
+        border-radius: 2px;
+      }
+      .a {
+        padding: 0.5rem;
+        position: relative;
+        transition: all 700ms ease-in-out;
+
+        @include animateAll;
+      }
+    }
+  }
+
+  .menu-open,
+  .menu-close {
+    border: 1px solid $SECONDARY-COLOR;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .menu-small {
+    position: absolute;
+    background-color: $PRIMARY-COLOR;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 700ms ease-in-out;
+    animation: menu 700ms ease-in;
+
+    @keyframes menu {
+      0% {
+        height: 0%;
+      }
+      100% {
+        height: 100%;
+      }
+    }
+
+    &__inner {
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      padding: 2rem 1.5rem;
+    }
+    .container__links {
+      display: flex;
+      height: 83%;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 2.5rem;
+
+      .container__link {
+        font-weight: 200;
+        .a {
+          padding: 0.5rem;
+          position: relative;
+          opacity: 1;
+
+          @include animateAll;
+        }
+        .main {
+          font-weight: 400;
+          border: 1px solid $GRAY-COLOR;
+          padding: 0.8rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,55 @@
+@media screen and (max-width: 81.25rem) {
+  .mobile-container {
+    flex-wrap: wrap;
+    padding: 13rem 0 2.5rem 6rem;
+    gap: 1rem;
+
+    &__info {
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: 78.688rem) {
+  .mobile-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 0 2.5rem 0;
+
+    &__info {
+      text-align: center;
+    }
+
+    &__images {
+      width: 100%;
+      border-radius: 0;
+      height: 100%;
+      background-color: $PRIMARY-COLOR;
+      padding: 2rem 0;
+
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+@media screen and (max-width: 37.85rem) {
+  .mobile-container {
+    padding: 2rem 0 2.5rem 0;
+    &__info {
+      text-align: center;
+      &-head {
+        font-size: 5vw;
+      }
+      &-para {
+        font-size: 2.5vw;
+      }
+    }
+    &__images {
+      img {
+        width: 60vw;
+      }
+    }
+  }
+}

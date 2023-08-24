@@ -1,0 +1,104 @@
+.container-profile {
+  display: flex;
+  gap: 2rem;
+  border-bottom: 1px solid $PRIMARY-COLOR;
+  background-image: $BACKGROUND-IMAGE-PRIMARY;
+  &__change {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .image {
+      $SIZE: 200px;
+      width: $SIZE;
+      height: $SIZE;
+      position: relative;
+      object-fit: cover;
+      border-radius: 100px;
+    }
+
+    input[type="file"] {
+      background-color: #eeeeee;
+      outline: none;
+      display: none;
+    }
+    label:hover {
+      cursor: pointer;
+    }
+
+    label {
+      background-color: $GRAY-COLOR;
+      color: $WHITE-COLOR;
+      padding: 0.5rem;
+      $SIZE: 50px;
+      height: $SIZE;
+      width: $SIZE;
+      border-radius: 100px;
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      i {
+        font-size: 1.7rem;
+      }
+    }
+    input[type="file"]::-webkit-file-upload-button {
+      border: none;
+    }
+  }
+  &__info {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    flex-direction: column;
+    background-image: $BACKGROUND-IMAGE-PRIMARY;
+    color: $WHITE-COLOR;
+    padding: 5rem 3rem 2rem;
+
+    &-header {
+      font-size: 2rem;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin: 1rem 0;
+    }
+    &-bio {
+      font-size: 1.1rem;
+      margin: 0.3rem 0;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 200;
+    }
+    .action-btn {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      color: $GRAY-COLOR;
+
+      &n {
+        margin-top: 0.7rem;
+        background-color: $WHITE-COLOR;
+        padding: 0.8rem;
+        width: 170px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+
+        i {
+          font-size: 1.2rem;
+        }
+
+        &:hover {
+          background-color: darken($WHITE-COLOR, 10);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+@mixin beforeAfter($width, $height, $bg-color) {
+  content: "";
+  position: absolute;
+  width: $width;
+  height: $height;
+  background-color: $bg-color;
+  z-index: 1;
+}
+@mixin topLeft {
+  top: 0;
+  left: 0;
+}
+@mixin bottomRight {
+  bottom: 0;
+  right: 0;
+}
+
+@mixin animateAll {
+  &:hover::before {
+    @include beforeAfter(60%, 3%, $SECONDARY-COLOR);
+    @include topLeft;
+    animation: load 700ms ease-in-out;
+  }
+  &:hover::after {
+    @include beforeAfter(60%, 3%, $SECONDARY-COLOR);
+    @include bottomRight;
+    animation: load 700ms ease-in-out;
+  }
+
+  @keyframes load {
+    0% {
+      width: 0%;
+      background-color: $GRAY-COLOR;
+    }
+    100% {
+      width: 60%;
+    }
+  }
+}

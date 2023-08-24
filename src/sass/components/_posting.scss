@@ -1,0 +1,81 @@
+.posting-container {
+  padding: 0 3rem 1rem;
+
+  &__heading {
+    font-weight: 500;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    &-input {
+      width: 100%;
+    }
+
+    &-input {
+      background-color: $WHITE-COLOR;
+      padding: 1rem;
+
+      &__image {
+        display: flex;
+        align-items: center;
+        gap: 0.9rem;
+
+        img {
+          $SIZE: 60px;
+          width: $SIZE;
+          height: $SIZE;
+          object-fit: cover;
+          border-radius: 100px;
+        }
+
+        form {
+          display: flex;
+          align-items: center;
+          flex-grow: 1;
+          input {
+            display: flex;
+            flex-grow: 1;
+            outline: none;
+            padding: 0.7rem;
+            // border: 1px solid $PRIMARY-COLOR;
+          }
+
+          button {
+            padding: 0.7rem;
+            // background-color: $PRIMARY-COLOR;
+            // border: 1px solid $PRIMARY-COLOR;
+            color: $WHITE-COLOR;
+
+            &:hover {
+              background-color: lighten($PRIMARY-COLOR, 10);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.posting-container__inner-posts {
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  &-post {
+    width: 60%;
+    margin: 2rem 0;
+    background-color: $WHITE-COLOR;
+    padding: 1rem;
+  }
+  &-comments {
+    width: 40%;
+    background-color: $WHITE-COLOR;
+  }
+}
+.reaction {
+  border-top: 1px solid $GRAY-COLOR;
+  border-bottom: 1px solid $GRAY-COLOR;
+}

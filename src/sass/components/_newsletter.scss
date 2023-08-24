@@ -1,0 +1,42 @@
+.newsletter-container {
+  background-image: $BACKGROUND-IMAGE-PRIMARY;
+  color: $WHITE-COLOR;
+  padding: 2rem 0;
+
+  &__head {
+    text-align: center;
+    font-weight: 600;
+    font-size: 35px;
+  }
+
+  form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+
+    .input {
+      width: 40%;
+      border: 1px solid $SECONDARY-COLOR;
+      display: flex;
+
+      input {
+        outline: none;
+        padding: 0.7rem;
+        width: 100%;
+        color: #fff;
+        font-weight: 200;
+        background-color: #050505;
+      }
+
+      button {
+        border: 1px solid $SECONDARY-COLOR;
+        padding: 0.7rem;
+
+        &:hover {
+          background-color: $SECONDARY-COLOR;
+        }
+      }
+    }
+  }
+}

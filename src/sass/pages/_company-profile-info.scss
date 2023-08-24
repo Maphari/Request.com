@@ -1,0 +1,72 @@
+.profile-container__info {
+  padding: 3rem;
+
+  &-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2.5rem;
+
+    &-head {
+      font-size: 1.7rem;
+      font-weight: 600;
+    }
+    .cart {
+      background-color: $PRIMARY-COLOR;
+      padding: 0.8rem;
+      color: $WHITE-COLOR;
+    }
+  }
+}
+.profile-container__info-card {
+  display: flex;
+  // flex-direction: row-reverse;
+  gap: 1rem;
+  padding: 0.6rem;
+  width: 28rem;
+  border: 1px solid $WHITE-COLOR;
+  transition: all 700ms ease-in-out;
+
+  &:hover {
+    border: 1px solid $PRIMARY-COLOR;
+  }
+
+  &-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  &__inner {
+    &-head {
+      font-size: 1.2rem;
+      font-weight: 500;
+      margin-bottom: 0.4rem;
+    }
+    &-description {
+      font-weight: 300;
+      margin: 0.5rem 0;
+      font-size: 0.9rem;
+    }
+    &-rating {
+      margin: 0.5rem 0;
+    }
+    &-btn {
+      background-color: $PRIMARY-COLOR;
+      padding: 0.4rem;
+      color: $WHITE-COLOR;
+      text-align: center;
+      margin-top: 0.2rem;
+      font-size: 0.8rem;
+    }
+  }
+}
+
+.container-others {
+  padding: 2rem 3rem;
+
+  display: flex;
+  align-items: center;
+  // justify-content: center;
+  gap: 0.3rem;
+}

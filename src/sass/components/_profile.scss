@@ -1,0 +1,52 @@
+.profile-container-top {
+  padding: 2rem 3rem;
+
+  &__header {
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+  &__cart {
+    background-color: $PRIMARY-COLOR;
+    color: $WHITE-COLOR;
+    padding: 0.7rem;
+  }
+  &__services {
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+
+    &-cat {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      background-color: #eeeeee;
+      padding: 1rem;
+      border: 1px solid #eeeeee;
+      transition: all 700ms ease-in-out;
+      margin-top: 1rem;
+
+      &:hover {
+        border: 1px solid $PRIMARY-COLOR;
+      }
+
+      &__header {
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: $GRAY-COLOR;
+      }
+      i {
+        font-size: 1.2rem;
+        color: $GRAY-COLOR;
+      }
+    }
+  }
+}
+.profile-container__info-profile {
+
+  &-header {
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+}

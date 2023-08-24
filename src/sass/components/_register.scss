@@ -1,0 +1,141 @@
+.register-container {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(
+    to right bottom,
+    #051937,
+    #0d152b,
+    #0f1020,
+    #0c0b15,
+    #050505
+  );
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__inner {
+    background-color: $WHITE-COLOR;
+
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 1rem;
+
+    &-head {
+      font-size: 2.2rem;
+      font-weight: 700;
+    }
+    &-para {
+      opacity: 0.5;
+      font-weight: 400;
+      margin-bottom: 1.3rem;
+    }
+    .inner {
+      margin: 2.5rem;
+    }
+    .google {
+      background-color: #050505;
+      text-align: center;
+      padding: 0.6rem;
+      color: $WHITE-COLOR;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+      margin: 0.8rem auto;
+      font-weight: 500;
+
+      &:hover {
+        cursor: pointer;
+        background-color: lighten($PRIMARY-COLOR, 5);
+      }
+
+      i {
+        font-size: 1.2rem;
+      }
+    }
+  }
+  .btn-sub {
+    background-color: #051937;
+    padding: 0.6rem;
+    color: $WHITE-COLOR;
+    text-align: center;
+    width: 100%;
+    margin: 0.6rem 0 0.2rem 0;
+  }
+  .container-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    .btn-log {
+      text-align: center;
+      font-weight: 600;
+      color: #051937;
+    }
+  }
+  .para {
+    text-align: center;
+  }
+  .right {
+    background-color: #050505;
+    height: 65vh;
+    width: 10vw;
+    padding: 2rem;
+    color: $WHITE-COLOR;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+      transform: rotate(-90deg);
+      font-size: 2.3rem;
+      font-weight: 800;
+      letter-spacing: 0.2em;
+    }
+  }
+}
+
+.err {
+  font-size: 0.9rem;
+}
+
+.div-load {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .8rem;
+  background-image: linear-gradient(
+    to right bottom,
+    #051937,
+    #0d152b,
+    #0f1020,
+    #0c0b15,
+    #050505
+  );
+  color: $WHITE-COLOR;
+  font-size: 2rem;
+  font-weight: 800;
+
+  .loading {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 4px solid #ccc;
+    border-top-color: #333;
+    animation: spin 1s ease-in-out infinite;
+  }
+
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}

@@ -1,0 +1,54 @@
+.howitworks-container {
+  background-image: $BACKGROUND-IMAGE-PRIMARY;
+  color: $WHITE-COLOR;
+  padding: 2rem 6rem;
+
+  text-align: center;
+
+  &__para {
+    font-weight: 200;
+  }
+  &__head {
+    font-size: 2.124rem;
+    font-weight: 600;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.3rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+
+    &-div {
+      border: 1px solid $SECONDARY-COLOR;
+      padding: 1.5rem;
+      width: 300px;
+      //   height: 180px;
+      transition: all 700ms ease-in-out;
+
+      &:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+      }
+
+      i {
+        color: $WHITE-COLOR;
+        font-size: 2rem;
+        margin-bottom: 0.3rem;
+      }
+
+      &-header {
+        font-weight: 400;
+        font-size: 20px;
+        margin-bottom: 0.6rem;
+      }
+
+      &-para {
+        font-weight: 100;
+        font-size: 14px;
+      }
+    }
+  }
+}
